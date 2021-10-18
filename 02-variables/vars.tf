@@ -75,23 +75,23 @@ output "TRAININGS" {
 
 // Variables from tfvars
 
-//variable "FRUITS" {}
-//
-//output "FRUITS" {
-//  value = var.FRUITS
-//}
-//
-//variable "COUNTRY" {}
-//output "COUNTRY" {
-//  value = var.COUNTRY
-//}
-//
-//variable "SEASON" {}
-//output "SEASON" {
-//  value = var.SEASON
-//}
-//
-//variable "FRUIT" {}
-//output "FRUIT" {
-//  value = var.FRUIT
-//}
+variable "FRUITS" {}
+
+output "FRUITS" {
+  value = var.FRUITS
+}
+
+variable "COUNTRY" {}
+output "COUNTRY" {
+  value = var.COUNTRY
+}
+
+variable "SEASON" {}
+output "SEASON" {
+  value = var.SEASON
+}
+
+variable "FRUIT" {}
+output "FRUIT" {
+  value = var.FRUIT
+}
