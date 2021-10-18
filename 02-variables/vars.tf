@@ -91,7 +91,7 @@ output "FRUITS" {
 //  value = var.SEASON
 //}
 
-variable "FRUIT" {}
-output "FRUIT" {
-  value = var.FRUIT
+variable "FRUITS" {}
+output "FRUITS" {
+  value = var.FRUITS
 }
