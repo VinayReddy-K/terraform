@@ -95,3 +95,8 @@ variable "FRUITS" {}
 output "FRUITS" {
   value = var.FRUITS
 }
+
+
+
+
+
