@@ -75,11 +75,11 @@
 
 // Variables from tfvars
 
-variable "FRUITS" {}
-
-output "FRUITS" {
-  value = var.FRUITS
-}
+//variable "FRUITS" {}
+//
+//output "FRUITS" {
+//  value = var.FRUITS
+//}
 
 //variable "COUNTRY" {}
 //output "COUNTRY" {
