@@ -2,6 +2,6 @@ output "output" {
   value = "Hello World"
 }
 
-output "o/p2" {
+output "op2" {
   value = "hello world"
 }
