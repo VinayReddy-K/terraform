@@ -10,8 +10,7 @@ resource "aws_security_group" "allow_ssh" {
   name        = "allow_ssh"
   description = "allow_ssh"
 
-  ingress = [
-    {
+  ingress {
       description      = "SSH"
       from_port        = 22
       to_port          = 22
@@ -20,8 +19,7 @@ resource "aws_security_group" "allow_ssh" {
     }
   ]
 
-  egress = [
-    {
+  egress {
       from_port        = 0
       to_port          = 0
       protocol         = "-1"
