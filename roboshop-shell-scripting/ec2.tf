@@ -52,5 +52,5 @@ locals {
 }
 
 output "SPOT_ID" {
-  value = aws_spot_instance_request.cheap_worker.spot_instance_id
+  value = aws_spot_instance_request.cheap_worker.*.spot_instance_id
 }
