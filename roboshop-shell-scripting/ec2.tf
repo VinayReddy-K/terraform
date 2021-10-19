@@ -1,7 +1,7 @@
 resource "aws_spot_instance_request" "cheap_worker" {
   count                     = local.LENGTH
   ami                       = "ami-0e4e4b2f188e91845"
-  spot_price                = "0.0031"
+  spot_price                = "0.0035"
   instance_type             = "t2.micro"
   vpc_security_group_ids    = ["sg-0ce90bc6ff22f0a2c"]
   wait_for_fulfillment      = true
