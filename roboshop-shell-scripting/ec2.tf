@@ -18,16 +18,16 @@ resource "aws_ec2_tag" "name-tag" {
   key                       = "Name"
   value                     = element(var.COMPONENTS, count.index)
 }
-//
-//resource "aws_route53_record" "records" {
-//  count                     = local.LENGTH
-//  name                      = element(var.COMPONENTS, count.index)
-//  type                      = "A"
-//  zone_id                   = "Z00458692YJCZCCSC0W6X"
-//  ttl                       = 300
-//  records                   = [element(aws_spot_instance_request.cheap_worker.*.private_ip, count.index)]
-//}
-//
+
+resource "aws_route53_record" "records" {
+  count                     = local.LENGTH
+  name                      = element(var.COMPONENTS, count.index)
+  type                      = "A"
+  zone_id                   = "Z05588222UV008VFLU0F0"
+  ttl                       = 300
+  records                   = [element(aws_spot_instance_request.cheap_worker.*.private_ip, count.index)]
+}
+
 //resource "null_resource" "run-shell-scripting" {
 //  depends_on                = [aws_route53_record.records]
 //  count                     = local.LENGTH
