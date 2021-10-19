@@ -5,7 +5,7 @@ resource "aws_spot_instance_request" "cheap_worker" {
   instance_type             = "t2.micro"
   vpc_security_group_ids    = ["sg-0ce90bc6ff22f0a2c"]
   wait_for_fulfillment      = true
-  //spot_type                 = "persistent"
+  //spot_type               = "persistent"
   tags                      = {
     Name                    = element(var.COMPONENTS, count.index)
   }
@@ -49,4 +49,8 @@ resource "aws_ec2_tag" "name-tag" {
 //
 locals {
   LENGTH    = length(var.COMPONENTS)
+}
+
+output "SPOT_ID" {
+  value = aws_spot_instance_request.cheap_worker.spot_instance_id
 }
