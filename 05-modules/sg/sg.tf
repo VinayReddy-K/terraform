@@ -23,5 +23,5 @@ resource "aws_security_group" "allow_ssh" {
 }
 
 output "SG_ID" {
-  value = aws_security_group.allow_sh.id
+  value = aws_security_group.allow_ssh.id
 }
