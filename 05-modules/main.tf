@@ -13,5 +13,5 @@ provider "aws" {
 }
 
 output "PRIVATE_IP" {
-  value = module.ec2.PRIVATE_IP
+  value = module.ec2.*.PRIVATE_IP
 }
