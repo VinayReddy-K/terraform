@@ -51,6 +51,6 @@ locals {
   LENGTH    = length(var.COMPONENTS)
 }
 
-output "SPOT_ID" {
+output "attributes" {
   value = aws_spot_instance_request.cheap_worker.*.spot_instance_id
 }
