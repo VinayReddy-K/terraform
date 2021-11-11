@@ -1,6 +1,6 @@
 resource "aws_spot_instance_request" "cheap_worker" {
   count                     = local.LENGTH
-  ami                       = "ami-0e4e4b2f188e91845"
+  ami                       = "ami-077fb3e62ddf0fa9a"
   spot_price                = "0.0035"
   instance_type             = "t2.micro"
   availability_zone         = "us-east-1a"
