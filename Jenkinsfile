@@ -3,7 +3,7 @@ pipeline {
     node {label 'Workstation-1'}
   }
   parameters {
-    choice(name: 'ACTION', choices: ['apply', 'desrroy'], description: 'Pick an action')
+    choice(name: 'ACTION', choices: ['apply', 'destroy'], description: 'Pick an action')
   }
 
   stages{
