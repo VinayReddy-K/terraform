@@ -6,6 +6,7 @@ pipeline {
   options {
     ansiColor('xterm')
   }
+
   parameters {
     choice(name: 'ACTION', choices: ['apply', 'destroy'], description: 'Pick an action')
   }
