@@ -5,6 +5,11 @@ pipeline {
   parameters {
     choice(name: 'ACTION', choices: ['apply', 'destroy'], description: 'Pick an action')
   }
+  options {
+    ansiColor('xterm') {
+        // some block
+    }
+  }
 
   stages{
     stage('Terraform Init') {
