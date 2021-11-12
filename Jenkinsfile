@@ -2,13 +2,14 @@ pipeline {
   agent {
     node {label 'Workstation-1'}
   }
+
+  options {
+    ansiColor('xterm')
+  }
   parameters {
     choice(name: 'ACTION', choices: ['apply', 'destroy'], description: 'Pick an action')
   }
-  options {
-    ansiColor('xterm') {
-    }
-  }
+
 
   stages{
     stage('Terraform Init') {
