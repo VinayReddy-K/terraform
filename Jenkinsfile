@@ -7,7 +7,6 @@ pipeline {
   }
   options {
     ansiColor('xterm') {
-        // some block
     }
   }
 
